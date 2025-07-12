@@ -1,0 +1,352 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: sans-serif,monospace;
+    scroll-behavior: smooth;
+}
+/* header styles*/
+.nav-tabs{
+    width: 100%;
+    height: 60px;
+    color: ;
+    background: #2775e7f0;
+    display: flex;
+    position: fixed;
+    top: 0px;
+}
+.logo{
+    background: white;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+.nav-tabs h4{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+.nav-link{
+    position: fixed;
+    top: 60px;
+    right: 0px;
+    background: #100d80;
+    width: 60%;
+    height: 100%;
+    display: none;
+    transition-duration: 1s;
+}
+.nav-link > a{
+    text-decoration: none;
+    color: white;
+    margin: 10px 10px;
+    display: block;
+    width: inherit;
+    height: auto;
+    text-align: left;
+}
+.nav-link > h3{
+    color: gray;
+    font-size: 2em;
+    margin-left: 10px;
+}
+a:hover{
+    background: #aadfff;
+    margin: 0;
+    padding: 10px;
+}
+i{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: white;
+}
+#show{
+    font-size: 3em;
+    font-weight: bolder;
+}
+#blur{
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: none;
+    opacity: 0.2;
+}
+/* header style end here*/
+
+
+
+
+/* hero_section begins here */
+.hero-section{
+    width: 100%;
+    height: ;
+    background: #67889b2f;
+    padding-top: 10%
+}
+h1{
+    text-align: center;
+    padding-top: 15%;
+    font-size: 4em;    
+}
+.subheader{
+    color: e9e6df;
+    text-align: center;
+} 
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+button{
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    
+}
+.primary-button{
+    background: #2775e7f0;
+}
+.secondary-button{
+    background: white;
+    border: 1px solid #2775e7f0;
+} 
+button > a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* feature section*/
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    
+} 
+.feature > div{
+    width: 80%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 0 0 25px #525252;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px 10px;
+}
+a{
+    color: #2babff;
+    text-decoration: none;
+}
+.content{
+    text-align: justify;
+    padding: 10px;
+    
+} 
+.content-section{
+    background: #67889b2f;
+    width: 100%;
+    height: fit-content;
+}
+.content h3{
+    text-align: center;
+    padding-bottom: 10px;
+} 
+.content p{
+    text-indent: 10px;
+}
+.feature > div img{
+    width: 80%;
+    height: fit-content;
+    padding-bottom: 0;
+}
+.feature > div p{
+    text-align: justify;
+}
+.perform{
+    padding: 10px;
+} 
+.choosen{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.choosen>div{
+    width: 90%;
+    height: 150px;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;    
+    box-shadow: 0 0 25px #525252;
+    margin: 10px;
+    border-radius: 15px;
+}
+.choosen>div>span{
+    font-size: 4em;
+    font-weight: bolder;
+    color: goldenrod;
+}
+.h2{
+    padding: 10px;
+}
+    
+
+/* about */
+.about{
+    padding: 0px;
+}
+/* service */
+.service .sub-ser{
+    padding: 10px;
+    text-align: justify;
+} 
+#devStart,#seo,#responsive{
+  scroll-margin-top: 70px;
+}
+/* footer  */
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    background: lightgrey;    
+}
+.footer div{
+    width: 100%;
+    height: fit-content;
+    padding: 0px 15px 20px;
+}
+.footer div a{
+    margin: 15px;
+    display: block;
+    color: #00d5ff;
+}
+/* footer end */
+
+
+#contact_detail{
+    padding-left: 10px;
+    margin-top: 5px;
+    height: fit-content;
+    background: #100d80;
+    transition-duration: 1s;
+    word-break: break-all;
+}
+#contact_detail a{
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/* media query */
+
+@media only screen and (min-width: 768px){
+    .body{
+        font-size: 2em;
+    }
+    .button{
+        flex-direction: row;
+    } 
+    .feature{
+        flex-direction: row;
+    } 
+    .feature > div{
+        height: 400px;
+        overflow-y: auto;
+        box-shadow: none;
+        margin: 0;
+    }
+    .responsive{
+    overflow-y: hidden;
+    padding-top: 100px;
+}
+    .feature > div img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    padding: 0 auto;
+}
+.nav-link{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 60px;
+    display: block;    
+    background: #2775e7f0;
+    text-align: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+.nav-link a{
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    background: #2775e7f0;
+    display: inline;
+    
+}
+.nav-link > h3{
+    color: white;
+    font-size: 1em;
+    margin: 0 10px;
+    display: inline;
+}
+#contact_detail{
+    margin-top: 5px;
+    height: 0;
+    background: #2775e7f0;
+    transition-duration: 1s;
+    word-break: break-all;
+    overflow-y: hidden;
+}
+#contact_detail a{
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.choosen{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.choosen>div{
+    width: 45%;
+    height: 150px;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;    
+    box-shadow: 0 0 25px #525252;
+    margin: 10px;
+    border-radius: 15px;
+}
+}
